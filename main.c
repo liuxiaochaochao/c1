@@ -3,7 +3,7 @@
 int main()
 {
     int qian = 0;
-    printf("进入系统");
+    printf("进入系统\n");
 
     while (1)
     {
@@ -15,7 +15,7 @@ int main()
         scanf("%d", &a);
         if (a == 1)
         {
-            printf("进入存钱系统");
+            printf("进入存钱系统\n");
             int cun;
             scanf("%d", &cun);
             qian += cun;
@@ -26,12 +26,28 @@ int main()
         }
         if (a == 2)
         {
+            printf("进入取钱系统\n");
+            int qu;
+            scanf("%d",&qu);
+            qian-=qu;
+            printf("取出成功\n");
+             char x;
+            scanf("%C", &x);
+            scanf("%C", &x);
         }
         if (a == 3)
         {
+
+            printf("余额%d",qian);
+            
+             char x;
+            scanf("%C", &x);
+            scanf("%C", &x);
         }
         if (a == 4)
         {
+            printf("退出");
+            break;
         }
     }
 
