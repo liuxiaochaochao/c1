@@ -28,19 +28,29 @@ int main()
         {
             printf("进入取钱系统\n");
             int qu;
-            scanf("%d",&qu);
-            qian-=qu;
-            printf("取出成功\n");
-             char x;
-            scanf("%C", &x);
-            scanf("%C", &x);
+            scanf("%d", &qu);
+            if (qian >= qu)
+            {
+                qian -= qu;
+                printf("取出成功\n");
+                char x;
+                scanf("%C", &x);
+                scanf("%C", &x);
+            }
+            else
+            {
+                printf("取款失败\n");
+                char x;
+                scanf("%C", &x);
+                scanf("%C", &x);
+            }
         }
         if (a == 3)
         {
 
-            printf("余额%d",qian);
-            
-             char x;
+            printf("余额%d", qian);
+
+            char x;
             scanf("%C", &x);
             scanf("%C", &x);
         }
